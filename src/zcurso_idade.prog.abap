@@ -16,6 +16,6 @@ ELSEIF p_idade >= 12 AND p_idade < 18.
   WRITE: 'Adolescente'.
 ELSEIF p_idade >= 18 AND p_idade <= 60.
   WRITE: 'Adulto'.
-ELSEIF p_idade >= 60.
+ELSE.
   WRITE: 'Idoso'.
 ENDIF.
