@@ -29,8 +29,8 @@ START-OF-SELECTION.
         WRITE: 'O desconto é de 15%.'.
         NEW-LINE.
       ELSE.
+       ld_valorfinal = ( p_valor / 100 ) * 90.
         WRITE: / 'Valor final da compra: R$% ' , ld_valorfinal LEFT-JUSTIFIED.
-        ld_valorfinal = ( p_valor / 100 ) * 90.
         WRITE: 'O desconto é de 10%.'.
         NEW-LINE.
         WRITE: / 'Valor final da compra: R$% ' , ld_valorfinal LEFT-JUSTIFIED.
